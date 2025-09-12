@@ -1,0 +1,16 @@
+<div class="safety-container">
+    <h1 class="title">🚦 Road Safety Guidelines</h1>
+    <p class="subtitle">Follow these rules to stay safe on the road</p>
+
+    <div class="rules-section" *ngFor="let section of safetyRules">
+
+    
+        <h2 class="section-title">{{ section.title }}</h2>
+        <ul class="rule-list">
+            <li *ngFor="let rule of section.rules">
+                <span class="bullet">✔</span>
+                {{ rule }}
+            </li>
+        </ul>
+    </div>
+</div>

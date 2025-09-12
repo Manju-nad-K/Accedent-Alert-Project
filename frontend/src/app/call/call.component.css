@@ -1,0 +1,270 @@
+.center-box {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 250px;
+
+}
+
+.save-box {
+    border: 2px solid orange;
+    padding: 35px 50px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: #d21919;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    text-align: center;
+
+    max-width: 400px;
+
+    width: fit-content;
+
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.call-section {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #1976d2;
+    animation: slideInDown 0.6s ease-in-out;
+}
+
+.number-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    animation: zoomIn 0.5s ease;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #1976d2;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #42a5f5;
+    box-shadow: 0px 0px 8px rgba(66, 165, 245, 0.5);
+}
+
+.save-btn,
+.edit-btn {
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.save-btn {
+    background-color: #43a047;
+}
+
+.edit-btn {
+    background-color: #fbc02d;
+}
+
+.save-btn:hover,
+.edit-btn:hover {
+    transform: scale(1.05);
+}
+
+.info {
+    margin-top: 10px;
+    text-align: center;
+    color: #555;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.call-container {
+    animation: fadeInUp 0.8s ease forwards;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f5f7fa, #e6ebf2);
+    min-height: 100vh;
+}
+
+
+.call-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease;
+}
+
+
+.contact-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+
+.contact-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+
+.contact-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #444;
+}
+
+
+.contact-number {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0 10px;
+}
+
+
+.call-btn {
+    background: #28a745;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.call-btn:hover {
+    background: #218838;
+}
+
+
+.floating-call-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e63946;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(230, 57, 70, 0.5);
+    animation: pulse 1.5s infinite;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(230, 57, 70, 0.7);
+    }
+
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(230, 57, 70, 0.5);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(230, 57, 70, 0.7);
+    }
+}

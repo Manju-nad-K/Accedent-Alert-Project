@@ -1,0 +1,525 @@
+ :root {
+     --sos-red-1: #ff2b2b,
+         /* bright red */
+         --sos-red-2: #b10000,
+         /* deep red */
+         --sos-glow: #ff5a5a,
+         --sos-text: #ffffff
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .subtitle {
+     font-size: medium;
+     color: green;
+ }
+
+
+
+
+
+ .title {
+     font-size: 2.5rem;
+     margin-bottom: 20px;
+     text-align: center;
+ }
+
+ .sos-wrap {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 60vh;
+ }
+
+ .sos-btn {
+     position: relative;
+     width: 240px;
+     height: 240px;
+     border: 0;
+     border-radius: 50%;
+     color: var(--sos-text);
+     font-size: 2rem;
+     font-weight: 800;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     background: radial-gradient(100% 100% at 50% 0%, var(--sos-red-1) 0%, var(--sos-red-2) 100%);
+     box-shadow: 0 10px 25px rgba(255, 48, 48, .45), inset 0 -6px 14px rgba(249, 248, 248, 0.911);
+     cursor: pointer;
+     transition: transform .08s ease, box-shadow .2s ease, filter .2s ease;
+     outline: none;
+ }
+
+ .sos-btn:hover {
+     filter: saturate(1.15);
+     box-shadow: 0 12px 34px rgba(255, 48, 48, .55), inset 0 -6px 14px rgba(249, 248, 248, 0.911);
+ }
+
+ .sos-btn:active {
+     transform: scale(.98);
+     box-shadow: 0 6px 18px rgba(255, 48, 48, .45), inset 0 -10px 18px rgba(0, 0, 0, .35);
+ }
+
+ .sos-btn:focus-visible {
+     outline: 4px solid rgba(255, 77, 77, .6);
+     outline-offset: 6px;
+ }
+
+
+ .sos-btn::before {
+     content: "";
+     position: absolute;
+     left: 50%;
+     top: 12%;
+     transform: translateX(-50%);
+     width: 70%;
+     height: 26%;
+     background: linear-gradient(to bottom, rgba(255, 255, 255, .45), rgba(255, 255, 255, 0));
+     border-radius: 50%;
+     pointer-events: none;
+     filter: blur(.5px);
+ }
+
+ .sos-btn::after {
+     content: "";
+     position: absolute;
+     inset: -12px;
+     border-radius: 50%;
+     box-shadow: 0 0 0 0 rgba(255, 64, 64, .45);
+     animation: sos-pulse 1.4s ease-out infinite;
+ }
+
+ @keyframes sos-pulse {
+     0% {
+         box-shadow: 0 0 0 0 rgba(255, 64, 64, .55);
+     }
+
+     70% {
+         box-shadow: 0 0 0 28px rgba(255, 64, 64, 0);
+     }
+
+     100% {
+         box-shadow: 0 0 0 0 rgba(255, 64, 64, 0);
+     }
+ }
+
+
+ .sos-caption {
+     margin-top: 14px;
+     color: #e7eaed;
+     font-size: .95rem;
+ }
+
+ @media (max-width:480px) {
+     .sos-btn {
+         width: 200px;
+         height: 200px;
+         font-size: 1.8rem;
+     }
+ }
+
+
+ .sos-alert {
+     color: red;
+     font-weight: bold;
+     font-size: 20px;
+     text-transform: uppercase;
+     animation: blink 1s infinite;
+     letter-spacing: 1px;
+ }
+
+
+ @keyframes blink {
+     0% {
+         opacity: 1;
+     }
+
+     50% {
+         opacity: 0.3;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
+
+
+
+
+
+
+ .about {
+     margin: 50px 0;
+     text-align: left;
+     max-width: 800px;
+     margin-inline: auto;
+ }
+
+ .about h2 {
+     text-align: center;
+     margin-bottom: 20px;
+ }
+
+
+ .features {
+     margin: 60px 0;
+ }
+
+ .features h2 {
+     margin-bottom: 30px;
+ }
+
+ .features-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+     gap: 20px;
+ }
+
+ .feature-card {
+     /* background: #f9f9f9; */
+     background: rgb(221, 167, 167);
+     padding: 20px;
+     border-radius: 12px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s;
+ }
+
+ .feature-card:hover {
+     transform: translateY(-5px);
+ }
+
+ /* Animations */
+ .animate {
+     opacity: 0;
+     transform: translateY(30px);
+     animation: fadeUp 1s forwards;
+ }
+
+ .delay-1 {
+     animation-delay: 0.3s;
+ }
+
+ .delay-2 {
+     animation-delay: 0.6s;
+ }
+
+ .delay-3 {
+     animation-delay: 0.9s;
+ }
+
+ @keyframes fadeUp {
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
+
+
+ .map-preview {
+     margin: 60px 0;
+ }
+
+ .map-box {
+     height: 300px;
+     background: #eee;
+     border-radius: 12px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+
+ .footer {
+     margin-top: 40px;
+     font-size: 0.9rem;
+     color: #666;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ body,
+ html {
+     margin: 0;
+     padding: 0;
+ }
+
+
+
+
+ .hero {
+     margin-top: 0;
+     padding-top: 0;
+ }
+
+ .title {
+     margin: 0;
+     padding: 10px 0;
+     /* Adjust spacing under navbar if needed */
+ }
+
+
+
+ .hero {
+     height: 100vh;
+     width: 100%;
+     margin-top: 0px;
+     background-image: url(https://images.unsplash.com/photo-1517639493569-5666a7b2f494?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     overflow-x: hidden;
+ }
+
+ .highway {
+     height: 200px;
+     width: 500%;
+     display: block;
+     background-image: url(https://us.123rf.com/450wm/andreykuzmin/andreykuzmin1605/andreykuzmin160500066/56495798-asphalt-highway-road-marks-top-view.jpg?ver=6);
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     z-index: 1;
+     background-repeat: repeat-x;
+     animation: highway 5s linear infinite;
+ }
+
+ @keyframes highway {
+     100% {
+         transform: translateX(-3400px);
+     }
+ }
+
+ .city {
+     height: 500px;
+     /* Adjust for proper layering */
+     width: 230%;
+     background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1350&q=80');
+     background-size: cover;
+     background-position: center;
+     position: absolute;
+     bottom: 200px;
+     left: 0;
+     right: 0;
+     z-index: 1;
+     background-repeat: repeat-x;
+     animation: city 20s linear infinite;
+ }
+
+
+
+ @keyframes city {
+     100% {
+         transform: translateX(-1400px);
+     }
+ }
+
+ /* .flower {
+     height: 301px;
+     width: 500%;
+     background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1350&q=80');
+
+
+
+     position: absolute;
+     bottom: 200px;
+     left: 0;
+     right: 0;
+     display: block;
+     z-index: 1;
+     background-repeat: repeat-x;
+     animation: flower 20s linear infinite;
+ }
+
+ @keyframes flower {
+     100% {
+         transform: translateX(-1400px);
+     }
+ } */
+
+ .car {
+     width: 500px;
+     left: 50%;
+     bottom: 100px;
+     transform: translateX(-50%);
+     position: absolute;
+     z-index: 2;
+     transition: transform 1s ease-in-out;
+ }
+
+ .car img {
+     width: 100%;
+     animation: car 1s linear infinite;
+ }
+
+ @keyframes car {
+     100% {
+         transform: translateY(-1px);
+     }
+
+     50% {
+         transform: translateY(-1px);
+     }
+
+     0% {
+         transform: translateY(-1px);
+     }
+ }
+
+
+ .wheel {
+     left: 50%;
+     bottom: 179px;
+     transform: translateX(-50%);
+     position: absolute;
+     z-index: 2;
+     display: block;
+
+ }
+
+ /* Wheel rotation */
+ @keyframes wheel-spin {
+     to {
+         transform: rotate(360deg);
+     }
+ }
+
+ .wheel img {
+     width: 60px;
+     height: 60px;
+     animation: wheel-spin 1s linear infinite;
+     transform-origin: 50% 50%;
+ }
+
+ .back-wheel {
+     left: -158px;
+     position: absolute;
+ }
+
+ .front-wheel {
+     left: 90px;
+     position: absolute;
+ }
+
+ /* ✅ Accident (paused) */
+ .wheel.paused {
+     display: none !important;
+
+ }
+
+ .highway.paused,
+ .city.paused,
+ .flower.paused,
+ .wheel.paused img {
+     animation-play-state: paused !important;
+
+ }
+
+
+ /* .accident {
+     transform: translateX(-70%) rotate(-360deg) !important;
+ } */
+
+
+
+
+
+
+
+
+
+
+
+ .accident {
+     transform: translateX(-110%) rotate(-180deg) !important;
+     /* tilt */
+ }
+
+ .paused {
+     animation-play-state: paused !important;
+
+
+ }
+
+
+
+
+ .road-text {
+     position: absolute;
+     top: -40%;
+
+     left: 30%;
+     transform: translateX(-50%) perspective(500px) rotateX(25deg) skewX(-5deg);
+     font-size: 2rem;
+     font-weight: 600;
+     color: #dbe60e;
+     z-index: 100000000000000000000;
+
+     text-shadow: 2px 2px 8px rgba(248, 244, 244, 0.906),
+         -1px -1px 4px rgba(255, 255, 255, 0.4);
+
+
+     letter-spacing: 1px;
+     /* background: linear-gradient(to bottom, #ff0000 0%, #aa0000 100%); */
+
+     mix-blend-mode: hard-light;
+     /* makes it blend into road */
+ }
