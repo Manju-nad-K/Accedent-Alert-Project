@@ -1,0 +1,128 @@
+ /* body {}
+
+
+ .navbar {
+     background-color: #0d1117 !important;
+     transition: all 0.3s ease;
+ }
+
+ .navbar.sticky {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 1000;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ }
+
+
+
+ .navbar-brand {
+     color: #90ee90 !important;
+
+     font-weight: bolder;
+     font-size: 25px;
+ }
+
+ .nav-link {
+     color: #ffffff !important;
+     font-weight: 500;
+     transition: color 0.3s ease;
+ }
+
+ .nav-link:hover {
+     color: #90ee90 !important;
+ }
+
+ */
+
+
+ body {
+     margin: 0;
+     font-family: 'Montserrat', sans-serif;
+     background-color: #f6f5f7;
+ }
+
+ .row {
+     margin-top: 0 !important;
+     padding-top: 0 !important;
+ }
+
+
+ .navbar {
+     background-color: #0d1117 !important;
+     transition: all 0.3s ease;
+     padding: 10px 15px;
+ }
+
+ .navbar.sticky {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 1000;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .navbar-brand {
+     font-weight: bolder;
+     font-size: 25px;
+     color: #ffffff !important;
+ }
+
+ .navbar-brand .brand-accent {
+     color: #ff4b2b;
+
+     text-shadow: 0 0 5px #ff6a00, 0 0 10px #ff6a00;
+ }
+
+ .nav-link {
+     color: #ffffff !important;
+     font-weight: 500;
+     transition: color 0.3s ease;
+ }
+
+ .nav-link:hover {
+     color: #ff6a00 !important;
+ }
+
+ .btn-danger {
+     border-radius: 20px;
+     font-size: 14px;
+     padding: 6px 20px;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .btn-danger:hover {
+     background-color: #e63946;
+     box-shadow: 0 4px 10px rgba(255, 0, 0, 0.4);
+ }
+
+
+ .quote-text {
+     margin: 20px auto;
+     max-width: 90%;
+     text-align: center;
+     font-size: 16px;
+     color: #B22222;
+     line-height: 1.5;
+ }
+
+ @media (min-width: 768px) {
+     .quote-text {
+         font-size: 18px;
+         max-width: 70%;
+         margin-top: 30px;
+     }
+ }
+
+ @media (max-width: 991px) {
+     .navbar-nav {
+         margin-top: 15px;
+     }
+
+     .btn-danger {
+         width: 100%;
+         margin-top: 10px;
+     }
+ }

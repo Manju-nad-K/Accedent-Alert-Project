@@ -1,0 +1,108 @@
+
+<h1 style="color: white;z-index: 1000000000000000000000; position: absolute;margin-left: 55%;margin-top: 55%;"
+    class="road-text">{{ message }}
+</h1>
+<div class="hero">
+    <div class="text-center my-4">
+        <button style=" z-index:10000000000000;" class="sos-btn" (click)="triggerAccident()">
+            🚨 Accident
+        </button>
+
+
+    </div>
+    <p class="sos-alert text-center" style="z-index: 10000000000;color: red;"></p>
+
+
+    <div class="highway" [ngClass]="{ 'paused': accidentHappened }"></div>
+    <div class="city" [ngClass]="{ 'paused': accidentHappened }"></div>
+    <div class="flower" [ngClass]="{ 'paused': accidentHappened }"></div>
+
+
+    <div class="car" [ngClass]="{ 'accident': accidentHappened }">
+        <img src="https://www.aartiinformatics.com/wp-content/uploads/2014/09/new-sports-car.png">
+    </div>
+
+
+    <div class="wheel" [ngClass]="{ 'paused': accidentHappened }">
+        <img src="https://pngimg.com/uploads/car_wheel/car_wheel_PNG23306.png" class="back-wheel">
+        <img src="https://pngimg.com/uploads/car_wheel/car_wheel_PNG23306.png" class="front-wheel">
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<p class="sos-caption text-center" style="color: rgb(181, 90, 5);">
+    Tap to simulate accident and trigger emergency call
+</p>
+
+<p class="sos-alert text-center">{{ message }}</p>
+
+
+
+
+
+
+
+<section class="features">
+    <h2>Why Choose ResQ?</h2>
+    <div class="features-grid">
+
+        <div class="feature-card animate fade-in-up">
+            <h3>📍 Live GPS Tracking</h3>
+            <p>
+                Your exact location is instantly shared with your trusted contacts and
+                rescue teams.
+            </p>
+        </div>
+
+        <div class="feature-card animate fade-in-up delay-1">
+            <h3>⚡ Instant Alerts</h3>
+            <p>
+                A single tap sends emergency notifications within seconds to ensure
+                help reaches faster.
+            </p>
+        </div>
+
+        <div class="feature-card animate fade-in-up delay-2">
+            <h3>🔒 Secure & Reliable</h3>
+            <p>
+                Your data is transmitted securely, ensuring privacy while reaching the
+                right people.
+            </p>
+        </div>
+
+        <div class="feature-card animate fade-in-up delay-3">
+            <h3>🤝 Community Support</h3>
+            <p>
+                Alert nearby registered volunteers to assist until professional help
+                arrives.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<section class="map-preview">
+    <h2>Live Location Preview</h2>
+    <div class="map-box">
+
+
+        <iframe
+            src="https://www.google.com/maps?q=Husle%20Lifestyle%20Pvt%20Ltd,%20MIG-582%20Tara%20Nivas,%20172,%20Rd%20Number%201,%20Kukatpally%20Housing%20Board%20Colony,%20Kukatpally,%20Hyderabad,%20Telangana%20500085&output=embed"
+            width="1300px" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+
+    </div>
+</section>

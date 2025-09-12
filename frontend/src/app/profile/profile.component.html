@@ -1,0 +1,30 @@
+<div class="profile-wrapper" *ngIf="name; else loading">
+    <div class="profile-card">
+        <div class="profile-header">
+            <h2>Profile Information</h2>
+        </div>
+
+        <div class="profile-body">
+            <p><strong>Name:</strong> {{ name }}</p>
+            <p><strong>Email:</strong> {{ email }}</p>
+            <p><strong>Phone:</strong> {{ phone }}</p>
+        </div>
+
+        <div class="profile-message">
+            <h3>Hello {{ name }},</h3>
+            <p>
+                You are enrolled in this app. This is an <strong>Emergency Alert App</strong>.
+                We hope you never face any emergency situation, but if you do,
+                this app will help you by sending <strong>calls, messages, and your location</strong>
+                to your family.
+            </p>
+        </div>
+    </div>
+</div>
+
+<ng-template #loading>
+    <div class="loading">
+        <div class="spinner"></div>
+        <p>Loading profile...</p>
+    </div>
+</ng-template>

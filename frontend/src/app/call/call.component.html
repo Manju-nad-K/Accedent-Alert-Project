@@ -1,0 +1,165 @@
+<div class="center-box">
+    <div class="save-box">
+        <h2>Save Phone Number</h2>
+
+        <div class="input-row">
+            <label class="form-label" for="phone">Phone Number</label>
+            <input type="tel" id="phone" class="form-control" name="phone" [(ngModel)]="phoneNumber"
+                placeholder="Enter phone number" required />
+        </div>
+
+        <div class="form-group mt-3">
+            <button class="btn btn-primary" (click)="saveNumber()">Save</button>
+        </div>
+
+        <p *ngIf="message">{{ message }}</p>
+    </div>
+</div>
+
+<br><br>
+
+<div class="call-container">
+    <h2 class="call-title"> Emergency Contacts </h2>
+
+    <div class="contact-list">
+
+
+        <div class="contact-card">
+            <div class="contact-name">Family</div>
+            <div class="contact-number">{{ phoneNumber }}</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">Police</div>
+            <div class="contact-number">100</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-name">Fire Station</div>
+            <div class="contact-number">101</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">Ambulance</div>
+            <div class="contact-number">102</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">Women Helpline</div>
+            <div class="contact-number">1091</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">Child Helpline</div>
+            <div class="contact-number">1098</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">Disaster Management</div>
+            <div class="contact-number">108</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-name">Road Accident Emergency</div>
+            <div class="contact-number">1073</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">Gas Leakage</div>
+            <div class="contact-number">1906</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">Railway Enquiry</div>
+            <div class="contact-number">139</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">Railway Helpline</div>
+            <div class="contact-number">182</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">Cyber Crime Helpline</div>
+            <div class="contact-number">1930</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">Blood Bank Helpline</div>
+            <div class="contact-number">104</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">Mental Health Helpline</div>
+            <div class="contact-number">9152987821</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-name">COVID-19 Helpline</div>
+            <div class="contact-number">1075</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">AIDS Helpline</div>
+            <div class="contact-number">1097</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">Senior Citizens Helpline</div>
+            <div class="contact-number">14567</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">Tourist Helpline</div>
+            <div class="contact-number">1363</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">Disaster Relief (NDMA)</div>
+            <div class="contact-number">1070</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+
+        <div class="contact-card">
+            <div class="contact-name">Eye Donation Helpline</div>
+            <div class="contact-number">1919</div>
+            <button class="call-btn">Call</button>
+        </div>
+
+    </div>
+
+</div>

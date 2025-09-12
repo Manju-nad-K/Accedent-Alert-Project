@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+/* Remove unwanted margin & padding */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+
+.app-root,
+.container,
+.main-content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Remove default browser margins */
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure navbar sticks flush */
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero animation should touch navbar */
+.hero {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Title text under animation, not above */
+.title {
+    margin: 20px 0 0 0;
+    /* only space below, no space above */
+    padding: 0;
+    text-align: center;
+}
