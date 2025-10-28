@@ -3,7 +3,6 @@
 "outputDirectory": "dist",
   "framework": "angular",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/(.*)", "destination": "/index.html" } 
   ]
 }
-
