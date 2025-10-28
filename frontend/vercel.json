@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm run vercel-build",
-  "outputDirectory": "dist/accident-alert-app",
+"outputDirectory": "dist",
   "framework": "angular",
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
